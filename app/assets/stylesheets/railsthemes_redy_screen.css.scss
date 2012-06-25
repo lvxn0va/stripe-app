@@ -1,0 +1,320 @@
+// This file is included as part of the Redy theme from
+// RailsThemes.com, which is licensed for use in a single website. The
+// license can be found in the doc folder of this application or at
+// railsthemes.com/terms.
+
+@import "railsthemes_redy/base";
+
+/* General Screen Styles */
+
+.header-t {
+  background: $header-top-background url(image-path("bg-header-t.png")) 50% 0;
+  text-align: right;
+  color: $header-top-text;
+  padding: 16px 0 17px;
+  font: 0.875em / 1.286em Helvetica, Arial, sans-serif;
+  address {
+    margin: 0 -5px 0 0;
+    overflow: hidden;
+    text-align: right; }
+  .phone {
+    padding: 0 0 0 9px; } }
+
+.header-b {
+  @include button-gradient-background($header-background1, $header-background2);
+  border-bottom: 1px solid $header-border;
+  padding: 39px 0 42px;
+  overflow: hidden;
+  .logo {
+    float: left;
+    margin: 4px 0 0 -3px;
+    font-size: 0;
+    line-height: 0; } }
+
+// Navigation
+
+#header nav {
+  float: right;
+  max-width: 670px;
+  overflow: hidden;
+  margin: 0 -5px 0 0;
+  #nav {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 1.167em;
+    li {
+      float: left;
+      background: url(image-path("bg-nav.png")) no-repeat;
+      padding: 5px 10px 6px 10px;
+      min-width: 140px;
+    }
+    a {
+      color: $nav-text;
+    }
+  }
+}
+
+#footer nav {
+  float: right;
+  max-width: 670px;
+  overflow: hidden;
+  margin: 0 -5px 0 0;
+  border-bottom: 1px solid $footer-nav-border2;
+  float: none;
+  width: 487px;
+  margin: 0 -5px 40px auto;
+  .alt-nav {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 1.167em;
+    border-bottom: 1px solid $footer-nav-border1;
+    padding: 0 0 36px;
+    li {
+      float: left;
+      background: url(image-path("bg-nav.png")) no-repeat;
+      padding: 5px 10px 6px 10px;
+      min-width: 140px;
+      background: none;
+      padding: 5px 7px 6px 0;
+    }
+    a {
+      color: $footer-link-text; }
+  }
+}
+
+#header #nav, #footer .alt-nav {
+  a:hover {
+    text-decoration: underline; }
+  .twitter {
+    padding: 8px 0 7px 10px;
+    min-width: 0;
+    a {
+      display: block;
+      text-indent: -9999px;
+      overflow: hidden;
+      background: url(image-path("twitter.png")) no-repeat;
+      width: 36px;
+      height: 24px;
+    }
+  }
+}
+
+.alt-nav {
+  .twitter {
+    a {
+      background: url(image-path("twitter02.png")) no-repeat;
+    }
+  }
+}
+
+.top-block {
+  @include plain-gradient-background($white, $lightgray2);
+  border-bottom: 2px solid $darkgray;
+  padding: 45px 0 49px;
+  overflow: hidden; }
+
+.top-info {
+  margin: 0 0 0 -6px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.438em;
+  h1 {
+    margin: 0 0 0.188em;
+    font: bold 3em / 1.104em Arial, Helvetica, sans-serif; }
+  p {
+    margin: 0 0 1em; }
+  .more {
+    display: block;
+    color: $button-text;
+    font-size: 1.5em;
+    line-height: 1.167em;
+    font-weight: bold;
+    border: 3px solid $button-border;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    border-radius: 13px;
+    @include button-gradient-background($button-background1, $button-background2);
+    margin: 0 0 0 -2px;
+    padding: 7px 5px 10px 0;
+    text-align: center;
+    width: 315px;
+    &:hover {
+      border: 3px solid $button-hover-border;
+      @include button-gradient-background($button-hover-background1, $button-hover-background2);
+    } } }
+
+.top-block .visual {
+  background: url(image-path("bg-visual.png")) no-repeat;
+  width: 538px;
+  height: 240px;
+  padding: 23px 19px 21px 13px;
+  margin: 4px -12px 0 -8px; }
+
+#main {
+  padding: 40px 0 53px;
+  background: $content-background; }
+
+.boxes {
+  padding: 0 0 34px;
+  width: 100%; }
+
+.info-box {
+  padding-bottom: 31px;
+  .visual {
+    float: left;
+    width: 123px;
+    height: 123px;
+    position: relative;
+    border: 3px solid $lightgray2;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin: 0 28px 0 -1px; }
+  .text-box {
+    overflow: hidden;
+    height: 1%;
+    color: $darkgray;
+    font: 0.75em / 1.5em Arial, Helvetica, sans-serif;
+    padding: 2px 0 0; }
+  h2 {
+    color: $black1;
+    font-size: 1.667em;
+    line-height: 1.2em;
+    font-weight: bold;
+    margin: 0; }
+  p {
+    margin: 0 0 1em; }
+  .more {
+    display: inline-block;
+    vertical-align: top;
+    color: $button-text;
+    font-weight: bold;
+    border: 1px solid $button-border;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    @include button-gradient-background($button-background1, $button-background2);
+    margin: 0 1px;
+    padding: 5px 11px 7px 12px;
+    &:hover {
+      border: 1px solid $button-hover-border;
+      @include button-gradient-background($button-hover-background1, $button-hover-background2);
+      } } }
+
+.sign-up-form {
+  background: $whitesmoke1;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 38px 29px 31px 41px;
+  font: 14px / 26px Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  .note {
+    float: left;
+    width: 360px;
+    background: url(image-path("bg-note.png")) no-repeat 0 1px;
+    font-weight: bold;
+    padding: 0 0 10px 109px;
+    margin: 0; }
+  .area {
+    float: right;
+    width: 391px;
+    padding: 4px 0 0; }
+  .text {
+    margin: 3px 0 0; }
+  .submit {
+    float: right; } }
+
+#content {
+  margin-top: -5px; }
+
+#sidebar {
+  margin: 0 -5px;
+  h2 {
+    margin: 0;
+    padding: 0.458em 10px 0.458em 33px;
+    color: $h2-sidebar-text;
+    font: bold 1.5em / 1.167em Arial, Helvetica, sans-serif;
+    border: 1px solid $sidebar-heading-border;
+    @include plain-gradient-background($sidebar-background1, $sidebar-background2);
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    -webkit-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden; } }
+
+.section {
+  background: url(image-path("bg-section.png"));
+  border: solid $sidebar-border;
+  border-width: 0 1px 1px;
+  -moz-border-radius-bottomleft: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+  width: 252px;
+  padding: 20px 34px 28px 32px; }
+
+.addnav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 1.25em;
+  line-height: 1.2em;
+  > li {
+    border-top: 1px solid $sidebar-entry-border;
+    padding: 0.25em 0 0.3em;
+    &:first-child {
+      border-style: none; } }
+  a {
+    color: $sidebar-link-text;
+    &:hover {
+      text-decoration: underline; } }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 36px;
+    font: 0.9em / 1.222em Arial, Helvetica, sans-serif;
+    li {
+      padding: 7px 0 1px; } } }
+
+
+#footer {
+  border-top: 2px solid $footer-border;
+  overflow: hidden;
+  padding: 30px 0 73px;
+  @include plain-gradient-background($footer-background1, $footer-background2);
+}
+
+.footer-r {
+  float: right;
+  width: 487px; }
+
+.copy {
+  margin: 0 4px;
+  font: 0.875em / 1.286em Arial, Helvetica, sans-serif;
+  a {
+    color: $footer-link-text;
+    &:hover {
+      text-decoration: underline; } } }
+
+.about-block {
+  float: left;
+  width: 400px;
+  font: 0.875em / 1.286em Arial, Helvetica, sans-serif;
+  margin: 5px 0 0 -5px;
+  h2 {
+    margin: 0 0 0.583em;
+    color: $footer-h2-text;
+    font-size: 1.714em;
+    line-height: 1.167em;
+    font-weight: bold; }
+  p {
+    margin: 0; } }

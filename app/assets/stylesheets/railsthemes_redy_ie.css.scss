@@ -1,0 +1,76 @@
+// This file is included as part of the Redy theme from
+// RailsThemes.com, which is licensed for use in a single website. The
+// license can be found in the doc folder of this application or at
+// railsthemes.com/terms.
+
+@import "railsthemes_redy/base";
+/* -----------------------------------------------------------------------
+
+ Blueprint CSS Framework 1.0
+
+ http://blueprintcss.org
+
+   * Copyright (c) 2007-Present. See LICENSE for more info.
+
+   * See README for instructions on how to use Blueprint.
+
+   * For credits and origins, see AUTHORS.
+
+   * This is a compressed file. See the sources in the 'src' directory.
+
+----------------------------------------------------------------------- */
+
+/* ie.css */
+
+.ie9 {
+  .top-block .gradient,
+  .top-block .gradient:hover,
+  #main .gradient,
+  #main .gradient:hover,
+  .gradient,
+  .gradient:hover,
+  .select-gradient {filter: none;}
+}
+
+.lt-ie8 {
+  body {
+    text-align: center; }
+
+  .container {
+    text-align: left; }
+
+  sup {
+    vertical-align: text-top; }
+
+  sub {
+    vertical-align: text-bottom; }
+
+  html code {
+    *white-space: normal; }
+
+  hr {
+    margin: -4px auto 13px; }
+
+  img {
+    -ms-interpolation-mode: bicubic; }
+
+  .clearfix, .container {
+    display: inline-block; }
+
+  legend {
+    margin-top: -0.2em;
+    margin-bottom: 1em;
+    margin-left: -0.5em; }
+
+  textarea {
+    overflow: auto; }
+
+  form.inline {
+    div, p {
+      vertical-align: middle; }
+    input {
+      &.checkbox, &.radio, &.button {
+        margin: 0.5em 0; } }
+    button {
+      margin: 0.5em 0; } }
+}

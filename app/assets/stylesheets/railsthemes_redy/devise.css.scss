@@ -1,0 +1,11 @@
+// This file is included as part of the Redy theme from
+// RailsThemes.com, which is licensed for use in a single website. The
+// license can be found in the doc folder of this application or at
+// railsthemes.com/terms.
+
+@import "base";
+
+// Devise forms don't have great namespacing, so we're guessing at the forms devise will create for you.  If you use other user classes, you'll have to expand this:
+.user_edit, .admin_user_edit {
+  label { min-width: 0px; }
+}

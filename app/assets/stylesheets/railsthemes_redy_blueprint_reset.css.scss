@@ -1,0 +1,51 @@
+// This file is included as part of the Redy theme from
+// RailsThemes.com, which is licensed for use in a single website. The
+// license can be found in the doc folder of this application or at
+// railsthemes.com/terms.
+
+@import "railsthemes_redy/base";
+
+/* -----------------------------------------------------------------------
+ Based on Blueprint CSS Framework 1.0
+ Copyright (c) 2007-2010 blueprintcss.org
+----------------------------------------------------------------------- */
+
+/* reset.css */
+
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  display: block; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  float: none !important; }
+
+table, th, td {
+  vertical-align: middle; }
+
+blockquote {
+  &:before, &:after {
+    content: ''; } }
+
+q {
+  &:before, &:after {
+    content: ''; } }
+
+blockquote, q {
+  quotes: "" ""; }
+
+a img {
+  border: none; }
+
+:focus {
+  outline: 0; }

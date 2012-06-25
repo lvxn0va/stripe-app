@@ -1,0 +1,151 @@
+$crimson1: #9c0f11;
+$palevioletred: #c46f70;
+$crimson2: #9e0b0f;
+$crimson3: #ed1c24;
+$lightpink: #fbc2c4;
+$pink: #fbe3e4;
+$navy: #000077;
+$lavender: #e5ecf9;
+$aliceblue: #c3d9ff;
+$steelblue: #205791;
+$skyblue: #92cae4;
+$paleturquoise: #d5edf8;
+$darkgreen: #006600;
+$olivedrab: #264409;
+$darkkhaki: #c6d880;
+$beige: #e6efc2;
+$yellow: #ffff00;
+$lemonchiffon: #fff6bf;
+$darkolivegreen: #514721;
+$gold: #ffd324;
+$saddlebrown: #8a1f11;
+$black1: #000000;
+$black2: #111111;
+$black3: #252525;
+$dimgray1: #363636;
+$darkred: #990000;
+$dimgray2: #545353;
+$dimgray3: #666666;
+$gray1: #808080;
+$gray2: #8c8c8c;
+$darkgray: #959595;
+$silver: #c5c5c5;
+$lightgray1: #d1d1d1;
+$lightgray2: #d7d7d7;
+$gainsboro1: #dddddd;
+$gainsboro2: #e5e5e5;
+$whitesmoke1: #ebebeb;
+$whitesmoke2: #eeeeee;
+$whitesmoke3: #f6f6f6;
+//we're using not-quite-white because sass compacts abbreviates white to #fff which IE renders as blue on gradients:
+$white: #fefefe;
+
+
+// Portions of the page
+
+// Basics
+$body-background: $gainsboro2;
+$content-background: $white;
+$default-notification-border: $gainsboro1;
+$default-border: $gainsboro1;
+
+//Header
+$header-top-background: $dimgray2;
+$header-top-text: $white;
+$header-background1: $crimson3;
+$header-background2: $crimson1;
+$header-border: $palevioletred;
+
+// Sidebar
+$h2-sidebar-text: $crimson2;
+$sidebar-border: $black1;
+$sidebar-entry-border: $black3;
+$sidebar-heading-border: $lightgray2;
+$sidebar-background1: $whitesmoke1;
+$sidebar-background2: $lightgray2;
+$sidebar-link-text: $white;
+
+// Footer
+$footer-h2-text: $crimson2;
+$footer-background1: $white;
+$footer-background2: $gainsboro2;
+$footer-link-text: $black3;
+$footer-border: $darkgray;
+$footer-nav-border1: $gray1;
+$footer-nav-border2: $silver;
+
+// Text elements
+$hn-default-text: $black2;
+$h1-text: $crimson2;
+$h3-text: $crimson2;
+$h5-text: $crimson2;
+$h6-text: $crimson2;
+$title-text: $crimson2;
+
+$body-text: $black3;
+$nav-text: $white;
+$link-text: $darkgray;
+$link-hover-text: $crimson2;
+
+// Form elements
+$form-label-text: $crimson2;
+
+$form-select-border: $black1;
+$form-select-text: $white;
+$form-select-background1: $dimgray1;
+$form-select-background2: $black1;
+$form-select-disabled-background: $whitesmoke2;
+$form-select-option-background: $white;
+$form-select-option-hover-background: $navy;
+$form-select-option-hover-text: $white;
+
+$form-input-focus-border: $dimgray3;
+$form-input-border1: $gray2;
+$form-input-border2: $lightgray1;
+
+$button-text: $white;
+$button-border: $black1;
+$button-background1: $black3;
+$button-background2: $black1;
+$button-hover-border: $crimson2;
+$button-hover-background1: $crimson3;
+$button-hover-background2: $crimson2;
+$button-hover-background-jquery: $darkred;
+
+// Flash messages
+$notice-background: $lemonchiffon;
+$notice-text: $body-text;
+$notice-border: $gold;
+$error-text: $crimson2;
+$error-border: $palevioletred;
+$error-background: $whitesmoke3;
+
+// Tables
+$table-head-background: $aliceblue;
+$table-alternate-background: $whitesmoke2;
+// what about $table-std-background?
+
+
+// Mixins
+@mixin button-gradient-background($background1, $background2) {
+  background: $background1;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzM2MzYzNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, $background1 0%, $background2 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $background1), color-stop(100%, $background2));
+  background: -webkit-linear-gradient(top, $background1 0%, $background2 100%);
+  background: -o-linear-gradient(top, $background1 0%, $background2 100%);
+  background: -ms-linear-gradient(top, $background1 0%, $background2 100%);
+  background: linear-gradient(top, $background1 0%, $background2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$background1}', endColorstr='#{$background2}',GradientType=0 );
+}
+
+@mixin plain-gradient-background($background1, $background2) {
+  background: $background1;
+  background: -moz-linear-gradient(top, $background1 0%, $background2 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $background1), color-stop(100%, $background2));
+  background: -webkit-linear-gradient(top, $background1 0%, $background2 100%);
+  background: -o-linear-gradient(top, $background1 0%, $background2 100%);
+  background: -ms-linear-gradient(top, $background1 0%, $background2 100%);
+  background: linear-gradient(top, $background1 0%, $background2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$background1}', endColorstr='#{$background2}',GradientType=0 );
+}

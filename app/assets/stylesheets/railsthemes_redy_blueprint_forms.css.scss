@@ -1,0 +1,150 @@
+// This file is included as part of the Redy theme from
+// RailsThemes.com, which is licensed for use in a single website. The
+// license can be found in the doc folder of this application or at
+// railsthemes.com/terms.
+
+@import "railsthemes_redy/base";
+
+/* -----------------------------------------------------------------------
+ Based on Blueprint CSS Framework 1.0
+ Copyright (c) 2007-2010 blueprintcss.org
+----------------------------------------------------------------------- */
+
+/* forms.css */
+
+label {
+  display: inline-block;
+  color: $form-label-text;
+  font-weight: bold;
+  line-height: 1em;
+  min-width: 200px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 1em 0 0.25em; }
+
+legend {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: -0.2em;
+  margin-bottom: 1em;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+#IE8#HACK {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+input {
+  &[type=text]:focus, &[type=password]:focus, &.text:focus, &.title:focus {
+    border-color: $form-input-focus-border; } }
+
+textarea:focus {
+  border-color: $form-input-focus-border; }
+
+input.title {
+  font-size: 1.5em;
+  width: 300px;
+  padding: 5px; }
+
+form.inline {
+  line-height: 3;
+  p {
+    margin-bottom: 0; } }
+
+#message_holder .flash {
+  // The landing page flash messages
+  margin: 1.5em 2em;
+}
+
+#error_explanation, .flash, .ui-state-error, .ui-state-highlight {
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 2px solid $default-notification-border;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  p:last-child { margin-bottom: 0; }
+  ul {
+    color: $body-text;
+    padding-bottom: 1em;
+  }
+}
+
+#error_explanation, .flash.error {
+  background: $error-background;
+  color: $error-text;
+  border-color: $error-border;
+  h2, a {
+    color: $error-text; }
+}
+
+.flash.notice {
+  background: $notice-background;
+  color: $notice-text;
+  border-color: $notice-border;
+  a {
+    color: $notice-text; }
+}
+
+
+input {
+  &[type=radio] {
+    margin-right: 0.75em;
+  }
+  &[type=text], &[type=password], &[type=number], &[type=email], &[type=url] {
+    font: 16px Arial, Helvetica, sans-serif;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 1px 1px 4px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 1px 1px 4px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.5);
+    border: 1px solid;
+    border-color: $form-input-border1 $form-input-border2 $form-input-border2 $form-input-border1;
+    margin-bottom: 9px;
+    padding: 11px 9px;
+    height: 18px; } }
+
+textarea {
+  font: 16px Arial, Helvetica, sans-serif;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 1px 1px 4px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 1px 1px 4px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.5);
+  border: 1px solid;
+  border-color: $form-input-border1 $form-input-border2 $form-input-border2 $form-input-border1;
+  padding: 11px 9px;
+  height: 18px;
+  padding: 12px 5px 12px 10px;
+  min-height: 100px; }
+
+input {
+  &[type=submit]:hover, &[type=button]:hover {
+    cursor: pointer; } }
+
+input[type=submit], input[type=button], button {
+  color: $button-text;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: bold;
+  border: 3px solid $button-border;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  border-radius: 13px;
+  @include button-gradient-background($button-background1, $button-background2);
+  margin: 1em 0;
+  padding: 0 0.5em;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    border: 3px solid $button-hover-border;
+    cursor: pointer;
+    @include button-gradient-background($button-hover-background1, $button-hover-background2);
+  }
+}
+
+// For Scaffolds & Devise:
+form br { font-size: 1px; line-height: 1px; }

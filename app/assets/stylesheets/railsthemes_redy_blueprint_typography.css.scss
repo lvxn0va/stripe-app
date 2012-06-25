@@ -1,0 +1,235 @@
+// This file is included as part of the Redy theme from
+// RailsThemes.com, which is licensed for use in a single website. The
+// license can be found in the doc folder of this application or at
+// railsthemes.com/terms.
+
+@import "railsthemes_redy/base";
+
+/* -----------------------------------------------------------------------
+ Based on Blueprint CSS Framework 1.0
+ Copyright (c) 2007-2010 blueprintcss.org
+----------------------------------------------------------------------- */
+
+/* typography.css */
+
+html {
+  font-size: 62.5%;
+  min-width: 980px;
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+body {
+  color: $body-text;
+  background: $body-background;
+  font: 1.6em / 1.875em Georgia, "Times New Roman", Times, serif;
+  min-width: 980px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  color: $hn-default-text;
+  img { margin: 0; }
+}
+
+h1 {
+  font-size: 2.25em;
+  line-height: 1.111em;
+  color: $h1-text;
+  font-weight: bold;
+  margin: 0 0 0.25em; }
+
+h2 {
+  margin: 0 0 0.375em;
+  font: bold 1.5em / 1.167em Arial, Helvetica, sans-serif; }
+
+h3 {
+  font: italic 1.5em / 1.167em Arial, Helvetica, sans-serif;
+  color: $h3-text;
+  margin: 0 0 0.083em; }
+
+h4 {
+  font-weight: normal;
+  font-size: 1.875em;
+  line-height: 1.133em;
+  margin: 0 0 7px; }
+
+h5 {
+  margin: 0 0 0.542em;
+  font: italic 1.5em / 1.167em Georgia, "Times New Roman", Times, serif;
+  color: $h5-text; }
+
+h6 {
+  margin: 0 0 0.278em;
+  font: bold 1.125em / 1.222em Arial, Helvetica, sans-serif;
+  color: $h6-text; }
+
+.title-list {
+  color: $title-text;
+  margin-bottom: 0.542em; }
+
+.left {
+  float: left !important; }
+
+.right {
+  float: right !important; }
+
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0 0 1.313em;
+  &.left {
+  margin: 1.5em 1.5em 1.5em 0;
+  padding: 0; }
+  &.right {
+  margin: 1.5em 0 1.5em 1.5em;
+  padding: 0; }
+}
+
+a {
+  color: $link-text;
+  text-decoration: none;
+  &:focus, &:hover {
+    color: $link-hover-text; }
+}
+
+blockquote {
+  margin: 1.5em;
+  color: $dimgray3;
+  font-style: italic; }
+
+strong, dfn {
+  font-weight: bold; }
+
+em, dfn {
+  font-style: italic; }
+
+sup, sub {
+  line-height: 0; }
+
+abbr, acronym {
+  border-bottom: 1px dotted $dimgray3; }
+
+address {
+  margin: 0;
+  font-style: normal; }
+
+del {
+  color: $dimgray3; }
+
+pre {
+  margin: 1.5em 0;
+  white-space: pre;
+  font: 1em 'andale mono', 'lucida console', monospace; }
+
+code, tt {
+  font: 1em 'andale mono', 'lucida console', monospace; }
+
+li {
+  ul, ol {
+    margin: 0; } }
+
+ul, ol {
+  margin: 0 1.5em 1.5em 0;
+  padding-left: 1.5em; }
+
+ul {
+  list-style-type: disc; }
+
+ol {
+  list-style-type: decimal; }
+
+dl {
+  margin: 0 0 1.5em 0; }
+
+#content {
+  ul, ol {
+    margin: 0;
+    padding: 0 0 45px;
+    font: 1.125em / 1.222em Arial, Helvetica, sans-serif; }
+  ul {
+    list-style: none;
+    li {
+      background: url(image-path("bullet.png")) no-repeat 1px 8px;
+      padding: 0 0 0 14px; }
+    ul {
+      padding: 0 0 0 22px;
+      font: 1em / 1.222em Arial, Helvetica, sans-serif; } }
+  ol {
+    padding-left: 23px;
+    ol {
+      padding: 0 0 0 22px;
+      font: 1em / 1.222em Arial, Helvetica, sans-serif; } }
+}
+
+dl dt {
+  font-weight: bold; }
+
+dd {
+  margin-left: 1.5em; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid $default-border;
+  margin-bottom: 1.4em;
+  width: 100%;
+  th {
+    font-weight: bold; }
+  th, td {
+    border: 1px solid $default-border;
+    vertical-align: top;
+  }
+  thead th {
+    background: $table-head-background; }
+  th, td, caption {
+    padding: 4px 10px 4px 5px; }
+  tbody tr {
+    &:nth-child(even) td, &.even td {
+      background: $table-alternate-background; } }
+  tfoot {
+    font-style: italic; }
+}
+
+caption {
+  background: $whitesmoke2; }
+
+.small {
+  font-size: .8em;
+  margin-bottom: 1.875em;
+  line-height: 1.875em; }
+
+.large {
+  font-size: 1.2em;
+  line-height: 2.5em;
+  margin-bottom: 1.25em; }
+
+.hide {
+  display: none; }
+
+.quiet {
+  color: $dimgray3; }
+
+.loud {
+  color: $black1; }
+
+.highlight {
+  background: $yellow; }
+
+.added {
+  background: $darkgreen;
+  color: $white; }
+
+.removed {
+  background: $darkred;
+  color: $white; }
+
+.first {
+  margin-left: 0;
+  padding-left: 0; }
+
+.top {
+  margin-top: 0;
+  padding-top: 0; }
+
+.bottom {
+  margin-bottom: 0;
+  padding-bottom: 0; }
