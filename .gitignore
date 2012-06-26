@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #----------------------------------------------------------------------------
 # Ignore these files when commiting to a git repository.
 #
@@ -9,6 +10,7 @@
 # Corrections? Improvements? Create a GitHub issue: 
 # http://github.com/RailsApps/rails3-application-templates/issues
 #----------------------------------------------------------------------------
+#Ignore
 
 # bundler state
 /.bundle
@@ -73,3 +75,23 @@ db/*.sqlite3
 
 # vim artifacts
 **.swp
+=======
+*.gem
+*.rbc
+.bundle
+.config
+coverage
+InstalledFiles
+lib/bundler/man
+pkg
+rdoc
+spec/reports
+test/tmp
+test/version_tmp
+tmp
+
+# YARD artifacts
+.yardoc
+_yardoc
+doc/
+>>>>>>> dc0512ed5c032c2c27730f168e90fdb036f978d0
